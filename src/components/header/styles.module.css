@@ -1,0 +1,119 @@
+.header {
+    width: 100%;
+    height: 76px;
+    background-color: #121f44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content {
+    padding: 0 18px;
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.logo {
+    color: #fff;
+    font-size: 32px;
+}
+
+.logo span {
+    color: red;
+}
+
+.loginButton {
+    background-color: transparent;
+    padding: 8px 32px;
+    border-radius: 4px;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.loginButton:hover {
+    transform: scale(1.08);
+    background-color: #16254e;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    background-color: #f1f1f1;
+    color: #121f44;
+    padding: 4px 14px;
+    border-radius: 4px;
+    margin: 0 14px;
+}
+
+
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .link {
+        margin: 6px;
+        font-size: 14px;
+    }
+
+    .loginButton {
+        padding: 6px 24px;
+        font-size: 14px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    .header {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .link {
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .loginButton {
+        width: 100%;
+        margin-top: 8px;
+    }
+}
